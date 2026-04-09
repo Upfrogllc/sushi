@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Sushi Sportfishing</title>
+<link rel="stylesheet" href="../assets/css/sushi-global.css">
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="nav-brand"><div>
+    <img class="nav-logo" src="../assets/img/logo.png" alt="SUSHi Sportfishing">
+    <div class="nav-sub">Sportfishing &middot; Oregon Inlet</div>
+  </div></div>
+  <ul class="nav-links">
+    <li><a href="../index.html" >Home</a></li>
+    <li><a href="../the-team/index.html" >The Captain</a></li>
+    <li><a href="../the-boat/index.html" >The Boat</a></li>
+    <li><a href="../tournaments/index.html" >Tournaments</a></li>
+    <li><a href="../charters/index.html" >Charters</a></li>
+    <li><a href="../gallery/index.html" class='active'>Gallery</a></li>
+    <li><a href="../contact/index.html" >Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="location.href=\'../contact/index.html\'">Book a Charter</button>
+  <div class="hamburger" id="hamburger" onclick="this.classList.toggle(\'open\');document.getElementById(\'mm\').classList.toggle(\'open\')"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mm">
+  <a href="../index.html">Home</a><a href="../the-team/index.html">The Captain</a><a href="../the-boat/index.html">The Boat</a>
+  <a href="../tournaments/index.html">Tournaments</a><a href="../charters/index.html">Charters</a><a href="../gallery/index.html">Gallery</a><a href="../contact/index.html">Contact</a>
+</div>
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('../assets/img/helm_sunrise.jpeg')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content"><div class="page-hero-label">Sushi Sportfishing</div><h1>Gallery</h1></div>
+</section>
+
+<section class="section" style="background:var(--navy)">
+  <div class="gallery-grid">
+    <img src="../assets/img/hero_transom.jpeg" alt="Sushi transom crew">
+    <img src="../assets/img/dock_sunset.jpeg" alt="Sushi at dock sunset">
+    <img src="../assets/img/blue_led.jpeg" alt="Blue LED transom night">
+    <img src="../assets/img/captain_daughters.jpeg" alt="Charley with daughters" style="object-position:top center">
+    <img src="../assets/img/wmo_board_2021.jpeg" alt="2021 WMO weigh-in">
+    <img src="../assets/img/big_rock_trophy.jpeg" alt="Big Rock trophy" style="object-position:center 20%">
+    <img src="../assets/img/offshore_sunset.jpeg" alt="Offshore sunset">
+    <img src="../assets/img/boat_stands.jpeg" alt="Sushi on stands at IBW">
+    <img src="../assets/img/salon_interior.jpeg" alt="Teak salon interior">
+    <img src="../assets/img/wmo_2013_check.jpeg" alt="2013 WMO check">
+    <img src="../assets/img/big_rock_2015.jpeg" alt="419 lb blue marlin 2015">
+    <img src="../assets/img/charley_looking.jpeg" alt="Charley admiring the Sushi">
+    <img src="../assets/img/charley_celebrating.jpeg" alt="WMO celebration">
+    <img src="../assets/img/rods_sunset.jpeg" alt="Outriggers at sunset">
+    <img src="../assets/img/helm_sunrise.jpeg" alt="Cockpit sunrise">
+    <img src="../assets/img/sushi_silhouette.jpeg" alt="Sushi silhouette">
+    <img src="../assets/img/ocean_sunset2.jpeg" alt="Offshore sunset">
+    <img src="../assets/img/wmo_2013_weighin.jpeg" alt="2013 WMO weighin">
+  </div>
+</section>
+<footer class="footer teak-dark">
+  <div class="footer-grid">
+    <div>
+      <img class="footer-logo" src="../assets/img/logo.png" alt="SUSHi">
+      <div class="footer-brand-sub">World Champions</div>
+      <p class="footer-brand-desc">The only boat in history to win both the White Marlin Open and the Big Rock Blue Marlin Tournament. Faith, family, and fishing from Pirate's Cove Marina.</p>
+    </div>
+    <div class="footer-col"><div class="footer-col-title">Navigate</div><ul>
+      <li><a href="../the-team/index.html">The Captain</a></li><li><a href="../the-boat/index.html">The Boat</a></li>
+      <li><a href="../tournaments/index.html">Tournaments</a></li><li><a href="../charters/index.html">Charters</a></li>
+      <li><a href="../gallery/index.html">Gallery</a></li><li><a href="../contact/index.html">Contact</a></li>
+    </ul></div>
+    <div class="footer-col"><div class="footer-col-title">Target Species</div><ul>
+      <li><span>Blue Marlin</span></li><li><span>White Marlin</span></li><li><span>Yellowfin Tuna</span></li>
+      <li><span>Wahoo</span></li><li><span>Mahi-Mahi</span></li><li><span>Sailfish</span></li>
+    </ul></div>
+    <div class="footer-col"><div class="footer-col-title">Contact</div><ul>
+      <li><a href="tel:2522166291">(252) 216-6291</a></li><li><a href="mailto:charley@sushisf.com">charley@sushisf.com</a></li>
+      <li><span>Pirate's Cove Marina</span></li><li><span>2000 Sailfish Point</span></li><li><span>Manteo, NC 27954</span></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 Sushi Sportfishing. All rights reserved.</span><span>Pirate's Cove &middot; USCG Licensed</span></div>
+</footer><script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50)});
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const sibs=e.target.parentElement.querySelectorAll('.fade-in');const i=Array.from(sibs).indexOf(e.target);e.target.style.transitionDelay=(i*75)+'ms';e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.12});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('mm').classList.remove('open');document.getElementById('hamburger').classList.remove('open')}));
+</script>
+</body></html>
