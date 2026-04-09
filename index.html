@@ -13,6 +13,7 @@
   [style*="grid-template-columns:1fr 1.4fr"] { grid-template-columns: 1fr !important; }
   [style*="grid-template-columns:auto 1fr"] { grid-template-columns: 1fr !important; }
   [style*="grid-template-columns:auto 1fr"] > div:first-child { display:none; }
+  .hero > [style*="padding"] { padding-left: 24px !important; padding-right: 24px !important; }
 }
 </style>
 </head>
@@ -42,7 +43,7 @@
   <div class="page-hero-bg" style="position:absolute;inset:0;background:url('assets/img/hero_transom.jpeg') center 35%/cover"></div>
   <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(4,6,9,0.92) 0%,rgba(4,6,9,0.65) 45%,rgba(4,6,9,0.25) 65%,rgba(4,6,9,0.08) 100%)"></div>
   <div style="position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top,rgba(4,6,9,0.95),transparent)"></div>
-  <div style="position:relative;z-index:2;width:100%;padding:0 clamp(24px,5vw,80px);padding-top:20px">
+  <div style="position:relative;z-index:2;width:100%;padding:20px 80px 0 200px">
     <div style="display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border:1px solid rgba(201,168,76,0.2);border-radius:50px;margin-bottom:20px;animation:fadeUp 0.8s ease both">
       <div style="width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pulse 2.5s infinite"></div>
       <span style="font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);opacity:0.7">Pirate's Cove Marina &middot; Manteo, NC</span>
